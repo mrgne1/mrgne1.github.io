@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Welcome to my blog"
+date: 2022-04-04 -0700
+---
+
+Well I've finally done it. After being on the freakin internet since time immemorial I've created a blog. Seriously, when I started on the internet it was with a dial-up 28.8k modem using AOL from floppy disks. My first computer was pre-Pentium. I remember using windows 3.1. I've been around a while and I can still recall the changes as they have happened. 
+
+In the begining the internet was a rough-around-the-edges kind of place. Anything could be found, but the trouble was finding it. Search engines would generate results, but it was terrible. Google wasn't around we had results from Lycos, Yahoo, AltaVista, etc. Everyone had a favorite search engine: "Oh you use Ask Jeeves? I much prefer meta-crawler, it combines the results from all multiple search engines." All of them were garbage, based on some textual content heuristic voodoo. Half of your search time was spent pouring through pages and pages of results looking for something relevant. The other half was spent trying different search terms: new synonyms, new phrases, etc. all in the vain hope you might use the same words found in the appropriate website. This painful search process ment that finding something useful on the internet was a prized skill. Now, if it's not on the first page of Google, it's probably not worth finding.
+
+Once you got to the 'correct' website, it was also garbage. When I tell you today that nobody has design sense, you might not believe me. Today we see beautiful websites with glorious color themes and elegant UI. It is hard to believe that if you give these same people the 'blank page' of raw HTML they will churn out poop quality websites, but they will. The evidence is in world wide web antiquity. All your friends had a website on Geocities and they picked colors like a mad-hatter and showed off their scripting skills with some horrible component whose only purpose was to demonstrate scripting skills. My friends were into the floating snow effect. So cool. So useless. These componentes and color schemes were combined like a megazorg, with even less visual coherence, to attack the 'invading aliens' of your visitors eyes. Maybe it's nostalgia, but god I miss those days.
+
+Now, in the era of Google, Instagram, Facebook, LinkedIn, Wordpress, Squarespace and others, I have started a simple static text-based blog. I'm finally catching up with the times. Geocities this one's for you.

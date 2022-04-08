@@ -1,1 +1,2 @@
-# mrgne1.github.io 
+Just another blog.
+
