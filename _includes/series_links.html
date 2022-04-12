@@ -12,9 +12,9 @@
     } 
 </style>
 
-{% assign series = site.data.series[page.seriesName] %}
+{% assign series = site.posts | sort: "date" | where: "seriesName",  page.seriesName %}
 
-{% if series and series.size > 1 %}
+{% if page.seriesName and series and series.size > 1 %}
 <div class="post-series-container">
     <h4 class="post-series-header">This Post is Part of a Series</h4>
     <div class="post-series-link-container">
@@ -22,9 +22,9 @@
         {% for part in series %}
             {% capture text %}Part {{forloop.index}}{% endcapture %}
             {% if page.url != part.url %}
-                <a class="post-series-link" href="{{part.url}}" title="{{part.name}}">{{text}}</a>{%unless forloop.last%},{%endunless%}
+                <a class="post-series-link" href="{{part.url}}" title="{{part.title}}">{{text}}</a>{%unless forloop.last%},{%endunless%}
             {% else %}
-                <text class="post-series-link post-series-nolink" title="{{part.name}}">{{text}}</text>{%unless forloop.last%},{%endunless%}
+                <text class="post-series-link post-series-nolink" title="{{part.title}}">{{text}}</text>{%unless forloop.last%},{%endunless%}
             {%endif%}
         {% endfor %}
     </div>
