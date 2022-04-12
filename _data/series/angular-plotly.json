@@ -1,7 +1,6 @@
 [
-{
-	'part': 1,
-	'name': 'The Beginning',
-	'url': '2022/04/12/plotly-angular-start.html',
-}
+	{
+		"name": "The Beginning",
+		"url": "/2022/04/12/plotly-angular-start.html"
+	}
 ]
