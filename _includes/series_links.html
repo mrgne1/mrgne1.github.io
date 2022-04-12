@@ -1,0 +1,32 @@
+
+<style>
+    .post-series-container {
+        margin: 20px 0;
+    }
+    .post-series-link {
+        white-space: nowrap;
+    }
+    .post-series-nolink {
+        font-weight: bold;
+        cursor: default;
+    } 
+</style>
+
+{% assign series = site.data.series[page.seriesName] %}
+
+{% if series and series.size > 1 %}
+<div class="post-series-container">
+    <h4 class="post-series-header">This Post is Part of a Series</h4>
+    <div class="post-series-link-container">
+        {%comment%}Rendering series. size: {{series.size}}{%endcomment%}
+        {% for part in series %}
+            {% capture text %}Part {{forloop.index}}{% endcapture %}
+            {% if page.url != part.url %}
+                <a class="post-series-link" href="{{part.url}}" title="{{part.name}}">{{text}}</a>{%unless forloop.last%},{%endunless%}
+            {% else %}
+                <text class="post-series-link post-series-nolink" title="{{part.name}}">{{text}}</text>{%unless forloop.last%},{%endunless%}
+            {%endif%}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
