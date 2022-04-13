@@ -4,6 +4,8 @@ title: "Plotly in Angular: The Beginning"
 categories: [angular, plotly, plotting, data visualization]
 assets: "/assets/plotly-angular-start"
 seriesName: "angular-plotly"
+repo_url: "https://github.com/mrgne1/the-beginning"
+repo_name: "The Beginning"
 ---
 
 I love PlotlyJS. Let's see how to set it up with Angular. We will be using [angular-plotly.js](https://github.com/plotly/angular-plotly.js/) ([npm](https://www.npmjs.com/package/angular-plotly.js/v/0.1.13)) to incorporate the PlotlyJS library into the Angular framework. If you're unfamiliar with Angular checkout their [website](https://angular.io). There is a lot of useful information about Angular and how to set it up and get familiar with it. Make sure you have Node.js installed and can use the `npm` and the `ng` commands. You can verify this by simply running `npm --help` and `ng --help`.
