@@ -12,9 +12,9 @@
     } 
 </style>
 
-{% assign series = site.posts | sort: "date" | where: "seriesName",  page.seriesName %}
+{% assign series = site.posts | sort: "date" | where: "post_series",  page.post_series %}
 
-{% if page.seriesName and series and series.size > 1 %}
+{% if page.post_series and series and series.size > 1 %}
 <div class="post-series-container">
     <h4 class="post-series-header">This Post is Part of a Series</h4>
     <div class="post-series-link-container">
