@@ -3,7 +3,7 @@ layout: post
 title: "Plotly in Angular: The Beginning"
 categories: [angular, plotly, plotting, data visualization]
 assets: "/assets/plotly-angular-start"
-seriesName: "angular-plotly"
+post_series: "angular-plotly"
 repo_url: "https://github.com/mrgne1/the-beginning"
 repo_name: "The Beginning"
 ---
