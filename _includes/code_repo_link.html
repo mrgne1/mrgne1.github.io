@@ -1,0 +1,13 @@
+
+<style>
+    .repo-link-container {
+        margin: 20px 0;
+    }
+</style>
+
+{% if page.repo_url %}
+<div class="repo-link-container">
+    <h4 class="repo-link-header">Just want the code?</h4>
+    <a class="repo-link" href="{{page.repo_url}}">{{page.repo_name | default: page.repo_url}}</a>
+</div>
+{% endif %}
