@@ -4,6 +4,8 @@ title: "Plotly in Angular: Towards Rest"
 categories: [angular, plotly, plotting, data visualization]
 assets: "/assets/plotly-angular-toward-rest"
 post_series: "angular-plotly"
+repo_url: "https://github.com/mrgne1/toward-rest.git"
+repo_name: "Toward Rest"
 ---
 
 Well, if you followed along with the [previous post]({%post_url 2022-04-12-plotly-angular-start %}) in this series you'll now have a completely useless plot in the Angular initial website. Let's improve that! In this post we'll make two changes. We'll first create an Angular component for our plot then we will create an Angular service for our data. 
