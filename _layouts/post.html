@@ -6,3 +6,7 @@ layout: default
 {{content}}
 {% include code_repo_link.html %}
 {% include series_links.html %}
+
+{% if page.mathjax %}
+    {% include mathjax.html %}
+{% endif %}
