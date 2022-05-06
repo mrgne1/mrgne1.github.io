@@ -1,0 +1,14 @@
+
+<script>
+    function cb(response) {
+        let collection = document.getElementsByTagName('footer')
+        if (collection.length > 0) {
+            let foot = collection[0]
+            let countMessage = response.value + ' people got lost and ended up here. \n'
+            foot.innerText = countMessage + foot.innerText;
+        }
+    }
+</script>
+<script async
+    src="https://api.countapi.xyz/hit/mrgne1.github.io/{{page.name}}?callback=cb"
+></script>

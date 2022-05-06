@@ -7,6 +7,10 @@ layout: default
 {% include code_repo_link.html %}
 {% include series_links.html %}
 
+{% if page.draft == false %}
+    {% include page_views.html %}
+{% endif %}
+
 {% if page.mathjax %}
     {% include mathjax.html %}
 {% endif %}
