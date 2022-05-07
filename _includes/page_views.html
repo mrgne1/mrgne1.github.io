@@ -9,6 +9,12 @@
         }
     }
 </script>
+
+{% if jekyll.environment == "development"%}
+    {% assign query_type = "get"%}
+{% else %}
+    {% assign query_type = "hit"%}
+{% endif %}
 <script async
-    src="https://api.countapi.xyz/hit/mrgne1.github.io/{{page.slug}}?callback=cb"
+    src="https://api.countapi.xyz/{{query_type}}/mrgne1.github.io/{{page.slug}}?callback=cb"
 ></script>
