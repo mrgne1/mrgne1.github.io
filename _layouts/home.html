@@ -2,6 +2,19 @@
 layout: default
 ---
 
+{% for page in site.posts %}
+    <script async
+        src="https://api.countapi.xyz/info/mrgne1.github.io/{{page.slug}}?callback=cb"
+    ></script>
+{% endfor %}
+<script>
+    cb = (result) => {
+        if (!result) return;
+        let el = document.getElementById(result.key);
+        if (el) el.title = result.value + " views";
+    }
+</script>
+
 <div class="home">
     {% if page.title %}
         <h1 class="page-heading">{{page.title}}</h1>
@@ -17,7 +30,7 @@ layout: default
             {% for post in posts %}
                 <li>
                     <span class="post-meta">{{ post.date | date: date_format }}</span>
-                    <h3>
+                    <h3 id="{{post.slug}}">
                         <a class="post-link" href="{{ post.url | relative_url }}">
                             {{ post.title | escape }}
                         </a>
